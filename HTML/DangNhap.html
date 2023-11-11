@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/DangKi.css">
+    <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Create account</title>
+
+</head>
+
+<body>
+    <div class="form__create">
+        <form id="action">
+            <div class="form__name">
+                <h2>MEMBER LOGIN NOW!</h2>
+            </div>
+            <div class="input">
+                <label for="emailLogin">Email</label>
+                <input type="text" id="emailLogin" class="input__type">
+            </div>
+            <div class="input">
+                <label for="passwordLogin">Password</label>
+                <input type="password" id="passwordLogin" class="input__type">
+            </div>
+            <div class="check">
+                <label> <input type="checkbox"> Remember me</label>
+                <a style="text-decoration: none;color: black; padding-left: 110px;" href="#"> Forgot Password? </a>
+            </div>
+            <div class="button">
+                <button id="button" type="submit" onclick=kiemTraDangNhap()>Login Now</button>
+            </div>
+
+            <div class="box">
+                <p> or </p>
+            </div>
+            <div class="icon">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </form>
+    </div>
+    <script src="../JS/main.js"></script>
+    <script src="../JS/dangnhap.js"></script>
+</body>
+
+</html>

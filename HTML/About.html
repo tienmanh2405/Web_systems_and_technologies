@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../CSS/about.css">
+    <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="formpage">
+        <header class="formpage__header" id="backtotop">
+            <a href="../HTML/home.html"><img src="../IMG/logo.png" alt="logo"></a>
+            <nav class="formpage__header--nav">
+                <ul class="nav__ul">
+                    <li><a href="../HTML/About.html">About</a></li>
+                    <li><a href="../HTML/Home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Menu &nbsp;<i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#Trend">Trending Books</a>
+                            <a href="#Classic">Classic Books</a>
+                            <a href="#Romance">Romance</a>
+                            <a href="#Kids">Kids</a>
+                            <a href="#Text">Text Books</a>
+                        </div>
+                    </li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#Discount">Discount</a></li>
+                    <li><a href=""><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+                    </li>
+                    <li style="color: #ffffff;"><a href="../HTML/DangNhap.html">Log in</a>/<a
+                            href="../HTML/DangKi.html">Sign up</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="content">
+                <div class="content__form">
+                    <h2>Welcome!!!</h2>
+                    <p>Welcome to our new website! We are thrilled to have you here. Whether you're a long-time visitor
+                        or a first-time guest,
+                        we hope you'll find our website informative, engaging, and easy to navigate.
+                        Enjoy your stay!!</p>
+                    <a href="../HTML/Home.html">Get Started</a>
+                </div>
+            </div>
+            <div class="login">
+                <div class="login__form">
+                    <h2>Member login</h2>
+                    <form id="formLogin">
+                        <div class="input-box">
+                            <span class="icon">
+                                <input id="emailLogin" type="email" class="input" placeholder="Enter your email"
+                                    autocomplete="off" required>
+                            </span>
+
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <input id="passwordLogin" type="password" class="input"
+                                    placeholder="Enter your password" autocomplete="off" required>
+                            </span>
+                        </div>
+                        <div class="remember-forgot">
+                            <label> <input type="checkbox"> Remember me</label>
+                            <a href="#"> Forgot Password? </a>
+                        </div>
+                        <button id="button" type="submit" onclick=kiemTraDangNhap()>Login Now</button>
+                        <div class="register-link">
+                            <p> Not a member? &nbsp;</p>
+                            <a href="../HTML/DangKi.html"> Sign up now</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <script src="../JS/dangnhap.js"></script>
+</body>
+
+</html>

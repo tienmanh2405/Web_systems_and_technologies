@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.formpage{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../IMG/background15.jpg);
+    background-repeat: no-repeat;
+    
+}
+.formpage__header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.formpage__header img{
+    height: 100px;
+    width: auto;
+    margin-left: 30px;
+}
+.formpage__header--nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin-right: 40px;
+}
+
+.formpage__header--nav li{
+    display: inline;
+    padding: 20px;
+}
+.formpage__header--nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.formpage__header--nav li a:hover{
+    color: black;
+}
+.formpage__header--nav li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-image: url(../IMG/background.png);
+    min-width: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: 1px solid black;
+    
+}
+.dropdown-content a:hover{
+    color: white;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+/*  */
+section
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.content
+{
+    width: 50%;
+    color: rgb(255, 255, 255);
+    float: left;
+    position: relative;
+}
+.content__form{
+    max-width: 600px;
+    position: absolute;
+    right: 0;
+    top: -100px;
+}
+.content h2
+{
+    font-size: 3em;
+    letter-spacing: 0.3em;
+    color: white;
+}
+.content p
+{
+    margin:10px 0 40px;
+}
+.content a
+{
+ text-decoration:none;
+ color: #fff;
+ border: 2px solid black;
+ font-weight: 500;
+ padding: 10px 40px;
+ border-radius: 40px;
+ transition: .5s;
+}
+.content a:hover
+{
+    background-color: black;
+}
+.login
+{
+    width: 50%;
+    float: left;
+}
+.login__form{
+    width: 440px;
+    margin: 0 auto;
+}
+.login h2
+{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+.input-box 
+{
+    position:relative ;
+    width: 100%;
+    height: 50px;
+    padding: 40px 0;
+}
+.input-box .input
+{
+    width: 100%;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 40px;
+    background: transparent;
+    background-color: transparent;
+    outline: none;
+    padding-left: 10px;
+    font-size: 18px;
+}
+::placeholder
+{
+    color: #fff;
+    font-size: 1.2em !important;
+    padding: 0 20px;
+}
+.input-box i
+{
+    position: absolute;
+    top: 55px;
+    left: 400px;
+    font-size: 1.2em;
+    color: black;
+}
+.remember-forgot
+{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    margin: 25px 0 15px;
+}
+.remember-forgot a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forgot a:hover
+{
+    text-decoration: underline;
+}
+#button
+{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    transition: .5s;
+    background-color: black;
+    color: #fff;
+}
+.register-link
+{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.register-link a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register-link a:hover
+{
+    text-decoration: underline;
+}
+@media (max-width: 1000px){
+    .content{
+        display: block;
+    }
+    .login {
+        display: none;
+    }
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+@media (max-width: 700px){
+    .formpage__header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+    }
+
+    .formpage__header--nav {
+        flex-direction: column; 
+        align-items: flex-start; 
+        position: absolute; 
+        top: 100px; 
+        right: 0;; 
+        width: 100%; 
+        display: block; 
+        z-index: 100; 
+    }
+    .formpage__header--nav ul{
+        margin-right: 0px;
+        padding-inline-start: 10px;
+    }
+    .formpage__header--nav li {
+        padding: 10px 20px;
+        display: block; /* Hiển thị dọc */
+    }
+    section .content__form{
+        margin-top: 200px;
+    }
+    .formpage{
+        height: 105vh;
+    }
+}
