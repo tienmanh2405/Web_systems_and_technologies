@@ -7,9 +7,6 @@
 .formpage {
     width: 99vw;
     height: 150vh;
-    background-image: url(../IMG/background15.jpg);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .formpage__header {
@@ -19,6 +16,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+    background-color: black;
 }
 
 .formpage__header img {
