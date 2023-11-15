@@ -6,21 +6,20 @@
 .formpage{
     width: 99vw;
     height: 950vh;
-    background-image: url(../IMG/background.png);
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: white;
 }
 .formpage__header{
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     z-index: 99;
+    background-color: black;
 }
-.formpage__header img{
-    height: 100px;
-    width: auto;
+.formpage__header img {
+    height: 70px;
+    width: 140px;
     margin-left: 30px;
 }
 .formpage__header--nav ul{
@@ -114,8 +113,10 @@
     color: white;
 }
 .section_trending{
+    width: 75vw;
     margin-top: 20px;
     color: black;
+    margin: auto;
 }
 
 .section_trending h3{
@@ -222,110 +223,6 @@
     font-weight: bolder;
     color:black !important;
 }
-.blogs{
-    width: 100%;
-    height: 430px;
-    background-image: url(../IMG/background-giay-cu-xam_090129420.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center; 
-    position: relative;
-}   
-.blogs h2{
-    padding: 50px 0 10px;
-    font-size: 3em;
-}
-.blogs p{
-    color: rgb(113, 112, 112);
-}
-.blogs img{
-    position: absolute;
-    top: 160px;
-    left: 30%;
-    z-index: 10;
-}
-.blogs__content{
-    width: 100%;
-    height: 220vh;
-}
-.blogs__content--rank{
-    width: 70%;
-    height: 224vh;
-    margin: 0 auto;
-    background-image: url(../IMG/background-giay-cu-xam_090129420.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    border-radius: 20px;
-    margin-top: 38px;
-}
-.blogs__content--rank1{
-    width: 100%;
-    height: 200px;
-    padding: 20px 10px;
-    color: black;
-    border-bottom: 1px solid white;
-    padding: 5px;
-}
-.content{
-    width: 55%;
-    float: left;
-}
-.blogs__content--rank1 img{
-    width: 25%;
-    height: 190px;
-    float: left;
-    padding: 10px;
-}
-.blogs__content--rank1 .content h2{
-    padding-top: 10px;
-}
-.blogs__content--rank1 .content a{
-    text-decoration: none;
-    color: rgb(128, 124, 124);
-}
-.blogs__content--rank1 .content p{
-    max-width: 600px;
-    padding-right: 10px;
-}
-.rank{
-    width: 20%;
-    height: 100%;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-left: 1px solid rgb(196, 191, 191);
-}
-.rank h2{
-    color: black;
-    font-weight: bold;
-    font-size: 30px;
-}
-.rank h3{
-    color: rgb(146, 144, 144);
-    font-size: 20px;
-}
-.more{
-    text-align: center;
-    padding-top: 5px;
-}
-.more a{
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(113, 112, 112);
-    transition: .5s;;
-    
-}
-.more a:hover{
-    color: black;
-}
-#rank1{
-    border-radius: 20px 20px 0 0;
-}
-.blogs__content--rank1:hover{
-    border: 2px dashed black;
-}
 /*  */
 .img__section{
     width: 100%;
@@ -333,12 +230,6 @@
     padding-top: 20px;
 }
   
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
 
 .row {
   margin: 0 2px;
@@ -349,14 +240,6 @@
   display: table;
   clear: both;
 }
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
     
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -364,19 +247,15 @@
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  background: url(../IMG/background-giay-cu-xam_090129420.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  border: 2px solid red;
+  border: 1px solid brown;
 }
   
 .img-fluid-rounded-start{
   object-fit: contain;
 }
 /*  */
-.card{
-    border: none;
-}
 .card img:hover{
     transition-duration: 0.5s;
     /* Safari & Google Chrome */
@@ -507,192 +386,15 @@ footer img {
     letter-spacing: 2px;
     font-size: 25px;
 }
-@media (max-width: 1250px){
-    .section__layout--content2{
-        display: none;
-    }
-    .section__layout--content1{
-        width: 100%;
-        height: 100%;
-        background-color: #dcd6c8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: #a07f5e;
-    }
-    .formpage{
-        height: 1150vh;
-    }
-}
-@media (max-width: 1276px){
-    .formpage {
-            height: 7900px;
-        }
-}
-@media (max-width: 1268px) {
-    .formpage {
-        height: 8200px;
-    }
-}
-@media (max-width: 1200px){
-    .blogs{
-        display: none;
-    }
-    .blogs__content{
-        display: none;
-    }
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* Căn giữa các card */
-    }
-    
-    .column {
-        width: calc(50% - 10px); /* Sử dụng 50% chiều rộng với khoảng cách giữa các card */
-        margin: 5px; /* Khoảng cách giữa các card */
-    }
-    .formpage{
-        height: 8250px;
-    }
-}
-@media (max-width: 877px) {
-    .formpage {
-        height: 8700px;
-    }
-}
-@media (max-width: 770px){
-    .formpage{
-        height: 12500px;
-    }
-}
-@media (max-width: 700px) {
-    
-    .formpage__header{
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 99;
-    }
-
-    .formpage__header--nav {
-        flex-direction: column; 
-        align-items: flex-start; 
-        position: absolute; 
-        top: 100px; 
-        right: 0;; 
-        width: 100%; 
-        display: block; 
-        z-index: 100; 
-    }
-    .formpage__header--nav ul{
-        margin-right: 0px;
-        padding-inline-start: 10px;
-    }
-    .formpage__header--nav li {
-        padding: 10px 20px;
-        display: block; /* Hiển thị dọc */
-    }
-    .marquee{
-        margin-top: 350px;
-    }
-    .section__layout--content2{
-        display: none;
-    }
-    .section__layout--content1{
-        width: 100%;
-        height: 100%;
-        background-color: #dcd6c8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: #a07f5e;
-    }
-    .section__layout--content1 h2{
-        font-size: 40px;
-    }
-    .section__layout--content1 h3{
-        font-size: 20px;
-        color: black;
-    }
-    .section__layout--content1 h4{
-        height: 45px;
-        width: 220px;
-        background-color: #51392b;
-        text-align: center;
-        line-height: 45px;
-        border-radius: 40px;
-        color: white;
-    } 
-    .formpage{
-        height: 12800px;
-    }
-}
-@media (max-width: 625px){
-    .formpage {
-            height: 13300px;
-        }
-}
-@media (max-width: 580px){
-    .card{
-        width: 80%;
-        margin: 10px auto;
-    }  
-    .section__layout--content1 h2{
-        font-size: 20px;
-    }
-    .section__layout--content1 h3{
-        font-size: 10px;
-        color: black;
-    }
-    .section__layout--content1 h4{
-        height: auto;
-        width: 150px;
-        background-color: #51392b;
-        text-align: center;
-        line-height: 45px;
-        border-radius: 40px;
-        color: white;
-    } 
-    .section__layout2 h2{
-        font-size: 15px;
-    }
-    .formpage{
-        height: 2865vh;
-    }
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .column {
-        width: calc(100% - 10px);
-        margin: 5px;
-    }
-}
-@media (max-width: 580px){
-    .formpage {
-            height: 3000vh;
-        }
-    }
-@media (max-width: 465px) {
-    .formpage {
-        height: 3130vh;
-    }
-}
-@media (max-width: 395px) {
-    .formpage {
-        height: 3280vh;
-    }
-}
-@media (max-width: 1250px){
-    .section__layout--content2{
-        display: none;
-    }
+.envato{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../IMG/background11.jpg!d);
+    color: white;
 }
 
   
