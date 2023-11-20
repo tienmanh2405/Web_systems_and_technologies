@@ -3,12 +3,12 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-.formpage{
+.formpage {
     width: 99vw;
-    height: 950vh;
-    background-color: white;
+    height: 1000px;
 }
-.formpage__header{
+
+.formpage__header {
     width: 100%;
     height: 100px;
     display: flex;
@@ -17,27 +17,31 @@
     z-index: 99;
     background-color: black;
 }
+
 .formpage__header img {
     height: 70px;
     width: 140px;
     margin-left: 30px;
 }
-.formpage__header--nav ul{
+
+.formpage__header--nav ul {
     list-style-type: none;
     margin-right: 40px;
 }
-.formpage__header--nav li{
+
+.formpage__header--nav li {
     display: inline;
     padding: 20px;
 }
-.formpage__header--nav li a{
+
+.formpage__header--nav li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     font-weight: bold;
 }
 .formpage__header--nav li a:hover{
-    color: black;
+    color: rgb(149, 60, 60);
 }
 .formpage__header--nav li.dropdown{
     display: inline-block;
@@ -73,10 +77,10 @@
 .formpage__header--nav li:hover .fa-caret-down,
 .formpage__header--nav li:hover .fa-cart-shopping,
 .formpage__header--nav li:hover .fa-skull {
-    color: black !important;
+    color: rgb(149, 60, 60) !important;
 }
 .formpage__header--nav li a:hover .fa-arrow-right-from-bracket{
-    color: black !important;
+    color: rgb(149, 60, 60) !important;
 }
 
 
@@ -112,14 +116,14 @@
     border-radius: 10px;
     color: white;
 }
-.section_trending{
+.section_trending, .section_gift{
     width: 75vw;
     margin-top: 20px;
     color: black;
     margin: auto;
 }
 
-.section_trending h3{
+.section_trending h3, .section_gift h3{
     display: inline;
     margin-left: 15px;
     font-weight: bold;
@@ -242,6 +246,7 @@
 }
     
 .card {
+  height: 420px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
@@ -254,6 +259,10 @@
   
 .img-fluid-rounded-start{
   object-fit: contain;
+}
+.card-img-top{
+    width: 100%;
+    height: 250px;
 }
 /*  */
 .card img:hover{
@@ -282,8 +291,9 @@ footer{
     font-size:18px;
     display: block;
     width:  100%;
-    padding-top: 20px;
-    margin-top: 70px !important;
+    margin-top: 50px !important;
+    background-color: black;
+    color: white;
 }
 
 .footer_content{
@@ -396,5 +406,8 @@ footer img {
     background-image: url(../IMG/background11.jpg!d);
     color: white;
 }
-
-  
+#hot{
+    position: relative;
+    bottom: 270px;
+    right: 140px;
+}
