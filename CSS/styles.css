@@ -411,3 +411,7 @@ footer img {
     bottom: 270px;
     right: 140px;
 }
+input[type="button"]:hover{
+    background-color: black;
+    color: white;
+}
