@@ -1,0 +1,40 @@
+section button {
+    border: 0px;
+    border-radius: 14px;
+    width: 180px;
+    height: 35px;
+    color: black;
+    background-color: white;
+}
+
+section button:hover {
+    background-color: black;
+    color: white;
+}
+
+#btn-page1,
+#btn-page2,
+#btn-page3 {
+    border-radius: 10px;
+    width: 40px;
+    height: 35px;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(130, 26, 2);
+    text-decoration: none;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+.card-body {
+    margin-top: 0px;
+}
