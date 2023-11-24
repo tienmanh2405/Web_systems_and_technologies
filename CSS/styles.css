@@ -41,7 +41,7 @@
     font-weight: bold;
 }
 .formpage__header--nav li a:hover{
-    color: rgb(149, 60, 60);
+    color: brown;
 }
 .formpage__header--nav li.dropdown{
     display: inline-block;
@@ -52,8 +52,9 @@
 .dropdown-content{
     display: none;
     position: absolute;
-    background-image: url(../IMG/background.png);
-    min-width: 180px;
+    background-color: white;
+    color: black;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 100;
     top: 50;
@@ -74,6 +75,12 @@
     display: block;
    
 } 
+#dropdown_items{
+    color: black;
+}
+#dropdown_items:hover {
+    color: brown;
+}
 .formpage__header--nav li:hover .fa-caret-down,
 .formpage__header--nav li:hover .fa-cart-shopping,
 .formpage__header--nav li:hover .fa-skull {
@@ -254,7 +261,7 @@
   margin-bottom: 20px;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid brown;
+  border: 1px solid black;
 }
   
 .img-fluid-rounded-start{
@@ -411,8 +418,28 @@ footer img {
     bottom: 270px;
     right: 140px;
 }
+input[type="button"] {
+    border: 1px solid;
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: -5px;
+}
 input[type="button"]:hover{
-    background-color: black;
+    background-color: rgb(81, 17, 3);
     color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(130, 26, 2);
+    text-decoration: none;
+}
+.card-body{
+    margin-top: -23px;
 }
 
