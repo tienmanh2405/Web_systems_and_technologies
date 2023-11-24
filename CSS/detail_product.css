@@ -12,9 +12,6 @@ body{
     width: 30vw;
     padding: 20px;
 } 
-.carousel-inner{
-    background-color: ;
-}
 .d-block{
     height: 500px;
 }
@@ -60,5 +57,5 @@ body{
 
 .product_add--detail{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
