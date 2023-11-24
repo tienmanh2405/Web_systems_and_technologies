@@ -1,0 +1,69 @@
+.form_gift{
+    width: 1350px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    padding-top: 40px;
+}
+.form_gift-content{
+    width: 550px;
+    height: auto;
+    font-size: 18px;
+}
+.buttons_added {
+    width: 120px;
+    height: 45px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttons_added input[type="button"] {
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    background-color: none;
+}
+
+.buttons_added input[type="number"] {
+    padding-left: 13px;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+.buttons_added input[type="button"]:hover {
+    background-color: #f3f3f3;
+    color: black;
+
+}
+.product_add--detail {
+    display: flex;
+}
+.add_number {
+    width: 40px;
+    border: none;
+}
+
+.is-form {
+    border: none !important;
+    background-color: #f3f3f3;
+}
+.add__card {
+    width: 200px;
+    height: 45px;
+    background-color: #f3f3f3;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.add__card:hover {
+    background-color: black;
+    color: white;
+}
