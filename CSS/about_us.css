@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+table {
+    margin-left: 130px;
+}
+
+.content1 {
+    width: 90vw;
+    height: auto;
+}
+
+#info-shop {
+    position: relative;
+    left: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* Để giữ cho pseudo-element không tràn ra ngoài khối chứa */
+}
+
+img {
+    width: 100%;
+    height: 550px;
+    display: block;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.36);
+    z-index: 1;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    width: 800px;
+    font-weight: bold;
+}
+
+.text-overlay p {
+    margin: 0;
+    font-size: 35px;
+    position: relative;
+    z-index: 3;
+}
+
+#img-content-1 {
+    width: auto;
+    height: 470px;
+}
+
+.content1 {
+    display: flex;
+    justify-content: center;
+}
+
+.content1 h2 {
+    margin-top: 120px;
+}
+
+.content2 img {
+    width: 600px;
+    height: 390px;
+}
+
+.content3 {
+    width: 90vw;
+    height: auto;
+}
+
+.content3 p {
+    max-width: 470px;
+    margin-left: 58px;
+}
+
+#img-content-3 {
+    width: 550px;
+    height: 380px;
+    margin-left: -50px;
+}
+
+.content3 h2 {
+    max-width: 530px;
+    margin-top: 70px;
+}
+
+.content4 p {
+    max-width: 450px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.content4 {
+    background-color: #f3f3f3;
+    height: 300px;
+}
+
+.content4 h2 {
+    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.content5 img {
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content5 img:first-child {
+    position: relative;
+    right: -130px;
+}
+
+.content5 #img-pt {
+    position: relative;
+    right: 130px;
+}
+
+.founder-overlay1 {
+    position: absolute;
+    top: 96%;
+    left: 63%;
+    transform: translate(-20%, -50%);
+    text-align: center;
+    color: rgb(255, 253, 255);
+    z-index: 2;
+}
+
+.founder-overlay1 p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.founder-overlay2 {
+    position: absolute;
+    top: 96%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.founder-overlay2 p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content6 p {
+    margin-left: 10px;
+}

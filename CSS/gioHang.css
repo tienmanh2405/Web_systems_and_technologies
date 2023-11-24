@@ -7,6 +7,7 @@
 .formpage {
     width: 99vw;
     height: 1000px;
+    background-color: #f3f3f3;
 }
 
 .formpage__header {
@@ -139,7 +140,7 @@
     line-height: 40px;
     text-align: center;
     color: black;
-
+    background-color: #f3f3f3;
 }
 
 .formpage__section--product {
@@ -151,6 +152,7 @@
     flex-direction: row;
     line-height: 150px;
     border-bottom: 1px solid rgb(187, 185, 185);
+    background-color: #f3f3f3;
 }
 
 .formpage__section--product img {
@@ -165,8 +167,9 @@
 .formpage__section--end1-button1 {
     width: auto;
     height: 40px;
-    color: gray;
+    color: rgb(108, 107, 107);
     border: 0;
+    background-color: rgb(221, 218, 218);
 }
 
 .formpage__section--end1-button1:hover {
@@ -181,6 +184,13 @@
 .formpage__section--end1-button2 {
     background-color: black;
     color: white;
+    border: 1px solid;
+}
+
+.formpage__section--end1-button2:hover {
+    background-color: rgb(145, 143, 143);
+    color: white;
+    border: 0;
 }
 
 .formpage__section--end1-button2,
@@ -199,7 +209,7 @@
     align-items: center;
     width: 270px;
     height: 40px;
-    background-color: rgb(240, 237, 237);
+    background-color: rgb(221, 218, 218);
 }
 
 .formpage__section--end2-accept {
@@ -216,12 +226,18 @@
     height: 40px;
 }
 
+.formpage__section--end2-accept button:hover {
+    background-color: rgb(145, 143, 143);
+    color: white;
+}
+
 .formpage__section--end2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 footer {
     text-align: center;
     padding: 25px;

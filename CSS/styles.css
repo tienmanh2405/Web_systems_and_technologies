@@ -5,7 +5,8 @@
 }
 .formpage {
     width: 99vw;
-    height: 1000px;
+    height: auto;
+    background-color: white;
 }
 
 .formpage__header {
@@ -128,6 +129,7 @@
     margin-top: 20px;
     color: black;
     margin: auto;
+    background-color: white;
 }
 
 .section_trending h3, .section_gift h3{
