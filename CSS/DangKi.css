@@ -35,7 +35,6 @@
     margin-bottom: 50px;
 }
 .input{
-
     width: 80%;
     height: 30px;
     margin: 0 auto;
@@ -108,5 +107,14 @@
         background-size: cover;
     }
 }
-
+span {
+    color: white;
+   display: flex;
+   flex-direction: column;
+   margin-left: 1040px;
+   padding-top: 35px;
+}
+#errName{
+    margin-top: -555px;
+}
 
