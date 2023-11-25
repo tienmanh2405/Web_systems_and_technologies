@@ -141,6 +141,7 @@
     text-align: center;
     color: black;
     background-color: #f3f3f3;
+    font-size: larger;
 }
 
 .formpage__section--product {
@@ -153,6 +154,7 @@
     line-height: 150px;
     border-bottom: 1px solid rgb(187, 185, 185);
     background-color: #f3f3f3;
+    font-size: larger;
 }
 
 .formpage__section--product img {
@@ -162,6 +164,7 @@
 
 .formpage__section--end {
     padding: 40px;
+    
 }
 
 .formpage__section--end1-button1 {
