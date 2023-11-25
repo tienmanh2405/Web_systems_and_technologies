@@ -1,4 +1,4 @@
-var addtocartButtons = document.getElementsByClassName("card");
+var addtocartButtons = document.getElementsByClassName("add__card");
 
 for (var i = 0; i < addtocartButtons.length; i++) {
     addtocartButtons[i].addEventListener("click", function(event) {

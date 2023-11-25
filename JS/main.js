@@ -50,10 +50,6 @@ const kiemTraDangKi = () =>{
         var email = document.getElementById("email").value;
         var password = document.getElementById("password").value;
         var confirmPassword = document.getElementById("confirm-password").value;
-        checkUser(first_name);
-        checkEmail(email);
-        checkPassword(password);
-        checkconfirmPassword(confirmPassword,password);
         if ( checkUser(first_name) && checkEmail(email) && checkPassword(password) && checkconfirmPassword(confirmPassword, password)) {
             const userData = {
                 first_name: first_name,
