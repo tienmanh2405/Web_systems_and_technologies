@@ -8,7 +8,7 @@ document.getElementById("logout-link").addEventListener("click", function(event)
     localStorage.removeItem("userData");
     var c = confirm("You definitely want to log out");
     if(c == true){
-        window.location.href = "../HTML/About.html"; 
+        window.location.href = "../HTML/Home.html"; 
         alert("Log out successfully");
     } 
     else
