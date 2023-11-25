@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dark Chocolate</title>
+    <title>White Chocolate</title>
     <link rel="stylesheet" href="../bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/css/bootstrap.css" />
     <link rel="stylesheet" href="../CSS/styles.css" />
     <link rel="stylesheet" href="../CSS/danhMuc.css">
@@ -21,28 +21,34 @@
         <header class="formpage__header" id="backtotop">
             <nav class="formpage__header--nav">
                 <ul class="nav__ul">
-                    <li><a href="../HTML/Home.html">Home</a></li>
+                    <li><a href="../HTML/Home_Login.html">Home</a></li>
                     <li class="dropdown">
-                        <a href="#">Products &nbsp;<i class="fa-solid fa-caret-down"></i></a>
+                        <a href="../HTML/DanhMuc_Login-Dark.html">Products &nbsp;<i
+                                class="fa-solid fa-caret-down"></i></a>
                         <div class="dropdown-content">
-                            <a href="DanhMuc_DarkChoco.html" id="dropdown_items">Dark Chocolate</a>
-                            <a href="DanhMuc_WhiteChoco.html" id="dropdown_items">White Chocolate</a>
+                            <a href="../HTML/DanhMuc_Login-Dark.html" id="dropdown_items">Dark Chocolate</a>
+                            <a href="../HTML/DanhMuc_Login-white.html" id="dropdown_items">White Chocolate</a>
                         </div>
                     </li>
-                    <li><a href="../HTML/DanhMuc_Gift.html">Christmas Gifts</a></li>
+                    <li><a href="../HTML/DanhMuc_Login-gift.html">Christmas Gifts</a></li>
                 </ul>
             </nav>
             <a href="../HTML/home.html"><img src="../IMG/logo.png" alt="logo" /></a>
             <nav class="formpage__header--nav">
                 <ul class="nav__ul">
-                    <li><a href="../HTML/AboutUs.html">About us</a></li>
-                    <li><a href="../HTML/discount.html">Discount</a></li>
-                    <li style="color: #ffffff;"><a href="../HTML/DangNhap.html">Log in</a>/<a
-                            href="../HTML/DangKi.html">Sign up</a>
-                    </li>
-                    <li><a href="" class="cart-icon">
+                    <li><a href="../HTML/AboutUs_Login.html">About us</a></li>
+                    <li><a href="../HTML/Discount_Login.html">Discount</a></li>
+                    <li><a href="../HTML/GioHang.html" class="cart-icon">
                             <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
                         </a></li>
+                    <li class="dropdown">
+                        <a href=""><i class="fa-solid fa-skull" style="color: white;"></i></a>
+                        <div class="dropdown-content1">
+                            <a id="user--login" style="color: black;" href="#">User Name</a>
+                            <a id="logout-link" style="color: black;" href="#">Log out&nbsp;
+                                <i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i></a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -57,9 +63,9 @@
                     </div>
                     <div class="row">
                         <div class="col-12 text-center">
-                            <a href="DanhMuc_DarkChoco.html"><button id="btn-darkChoco" class="mt-3 active">Dark
+                            <a href="DanhMuc_DarkChoco.html"><button id="btn-darkChoco" class="mt-3">Dark
                                     Chocolate</button></a>
-                            <a href="DanhMuc_WhiteChoco.html"><button id="btn-whiteChoco" class="mt-3">White
+                            <a href="DanhMuc_WhiteChoco.html"><button id="btn-whiteChoco" class="mt-3 active">White
                                     Chocolate</button></a>
                         </div>
                     </div>
@@ -69,10 +75,10 @@
                 <div class="row pt-3">
                     <div class="col-4 column">
                         <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-fruit-nut-18.00$.jpg" alt="">
+                            <a href="../HTML/detail2_product.html">
+                                <img class="card-img-top" src="../IMG/white-chocolate-original-18.00$.jpg" alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate Fruit Nut</h5>
+                                    <h5 class="card-title">White Chocolate Original</h5>
                                     <p class="card-text">18.00$</p>
                                     <input type="button" value="Add product" class="btn-dark add-card">
                                 </div>
@@ -81,119 +87,39 @@
                     </div>
                     <div class="col-4 column">
                         <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-with-coca-nibs-19.20$.jpg" alt="">
+                            <a href="../HTML/detail2_product.html">
+                                <img class="card-img-top" src="../IMG/white-chocolate-with-chilli-and-salt-21.50$.jpg"
+                                    alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate With Coca Nibs</h5>
-                                    <p class="card-text">19.20$</p>
-                                    <input type="button" value="Add product" class="btn-dark add-card">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4 column">
-                        <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-with-coffee-24.15$.jpg" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate With Coffee</h5>
-                                    <p class="card-text">24.15$</p>
-                                    <input type="button" value="Add product" class="btn-dark add-card">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row pt-3">
-                    <div class="col-4 column">
-                        <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-with-cumin-21.50$.jpg" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate With Cumin</h5>
+                                    <h5 class="card-title">White Chocolate With Chilli And Salt</h5>
                                     <p class="card-text">21.50$</p>
                                     <input type="button" value="Add product" class="btn-dark add-card">
                                 </div>
                             </a>
                         </div>
                     </div>
-
                     <div class="col-4 column">
                         <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-with-figs-20.05$.jpg" alt="">
+                            <a href="../HTML/detail2_product.html">
+                                <img class="card-img-top" src="../IMG/white-chocolate-with-chilli-20.05$.jpg" alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate With Figs</h5>
+                                    <h5 class="card-title">White Chocolate With Chilli</h5>
                                     <p class="card-text">20.05$</p>
                                     <input type="button" value="Add product" class="btn-dark add-card">
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="col-4 column">
-                        <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-with-hazelnut-21.30$.jpg" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate With Hazelnut</h5>
-                                    <p class="card-text">21.30$</p>
-                                    <input type="button" value="Add product" class="btn-dark add-card">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page-2" style="display: none;">
-                <div class="row pt-3">
-                    <div class="col-4 column">
-                        <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-with-honey-28.50$.jpg" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate With Honey</h5>
-                                    <p class="card-text">28.50$</p>
-                                    <input type="button" value="Add product" class="btn-dark add-card">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-4 column">
-                        <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-with-mint-21.25$.jpg" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate With Mint</h5>
-                                    <p class="card-text">21.15$</p>
-                                    <input type="button" value="Add product" class="btn-dark add-card">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4 column">
-                        <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-with-nutmeg-19.80$.jpg" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate With Nutmeg</h5>
-                                    <p class="card-text">19.80$$</p>
-                                    <input type="button" value="Add product" class="btn-dark add-card">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
                 </div>
                 <div class="row pt-3">
                     <div class="col-4 column">
                         <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-with-orange-slice-22.05$.jpg"
+                            <a href="../HTML/detail2_product.html">
+                                <img class="card-img-top" src="../IMG/white-chocolate-with-cocoa-nibs-19.20$.jpg"
                                     alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate With Orange Slice</h5>
-                                    <p class="card-text">22.05$</p>
+                                    <h5 class="card-title">White Chocolate With Cocoa Nibs</h5>
+                                    <p class="card-text">19.20$</p>
                                     <input type="button" value="Add product" class="btn-dark add-card">
                                 </div>
                             </a>
@@ -202,65 +128,15 @@
 
                     <div class="col-4 column">
                         <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-with-pineapple-21.00$.jpg" alt="">
+                            <a href="../HTML/detail2_product.html">
+                                <img class="card-img-top" src="../IMG/white-chocolate-with-coffee-23.00$.jpg" alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate With Pineapple</h5>
-                                    <p class="card-text">21.00$</p>
+                                    <h5 class="card-title">White Chocolate With Coffee</h5>
+                                    <p class="card-text">23.00$</p>
                                     <input type="button" value="Add product" class="btn-dark add-card">
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="col-4 column">
-                        <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-with-pista-23.50$.jpg" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate With Pista</h5>
-                                    <p class="card-text">23.50$</p>
-                                    <input type="button" value="Add product" class="btn-dark add-card">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page-3" style="display: none;">
-                <div class="row pt-3">
-                    <div class="col-4 column">
-                        <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-with-raisin-20.00$.jpg" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate With Raisin</h5>
-                                    <p class="card-text">20.00$</p>
-                                    <input type="button" value="Add product" class="btn-dark add-card">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-4 column">
-                        <div class="card text-left">
-                            <a href="../HTML/details_product.html">
-                                <img class="card-img-top" src="../IMG/dark-chocolate-with-rapsberry-23.50$.jpg" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dark Chocolate With Rapsberry</h5>
-                                    <p class="card-text">23.50$</p>
-                                    <input type="button" value="Add product" class="btn-dark add-card">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4 column">
-                    </div>
-                </div>
-                <div class="row pt-3">
-                    <div class="col-4 column">
-                    </div>
-                    <div class="col-4 column">
                     </div>
                     <div class="col-4 column">
                     </div>
@@ -270,8 +146,6 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <button id="btn-page1" class="mt-3 active">1</button>
-                    <button id="btn-page2" class="mt-3">2</button>
-                    <button id="btn-page3" class="mt-3">3</button>
                 </div>
             </div>
         </section>

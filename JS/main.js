@@ -92,7 +92,7 @@ const kiemTraDangKi = () =>{
             };
             // Lưu thông tin đăng ký vào localStorage
             localStorage.setItem('userData', JSON.stringify(userData));
-            window.location.href="../HTML/About.html";
+            window.location.href="../HTML/Home.html";
             alert("Successful member registration!");
         }
         

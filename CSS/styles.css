@@ -82,6 +82,13 @@
 #dropdown_items:hover {
     color: brown;
 }
+#user--login:hover {
+    color: brown !important;
+}
+#logout-link:hover {
+    color: brown !important;
+}
+
 .formpage__header--nav li:hover .fa-caret-down,
 .formpage__header--nav li:hover .fa-cart-shopping,
 .formpage__header--nav li:hover .fa-skull {
@@ -95,7 +102,7 @@
 .dropdown-content1{
     display: none;
     position: absolute;
-    background-image: url(../IMG/background.png);
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 100;
