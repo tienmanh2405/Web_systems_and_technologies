@@ -1,0 +1,65 @@
+.page-title {
+    font-size: 30px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.name-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.small-title {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+:root {
+    --text-color: black;
+    --backround-color: #f3f3f3;
+}
+
+.user-avatar {
+    border-radius: 50%;
+}
+
+.dash-line {
+    border: 2px dashed black;
+}
+
+.link-title {
+    display: block;
+    margin: 20px;
+}
+
+.fa-solid {
+    color: rgb(222, 237, 13);
+    color: linear-gradient(to bottom, rgb(222, 237, 13), rgb(53, 53, 51));
+}
+
+.box-title {
+    width: 75vw;
+    background-color: var(--backround-color);
+    border: 1px solid rgb(166, 163, 163);
+    margin: 0 auto;
+    padding-left: 5px;
+    font-size: 18px;
+}
+.box-title_css{
+    display: flex;
+    align-items: center;
+   padding: 20px;
+}
+.edit a{
+    color: rgb(66, 64, 64) !important;
+}
+.edit a:hover,i:hover{
+    color: black !important;
+}
+.modal-body input{
+    width: 100%;
+}
+.modal-body input[type="radio"]{
+    width: 10%;
+}

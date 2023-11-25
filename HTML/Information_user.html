@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/information.css">
+    <script src="../bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap");
+    </style>
+</head>
+
+<body>
+    <div class="formpage">
+        <header class="formpage__header" id="backtotop">
+            <nav class="formpage__header--nav">
+                <ul class="nav__ul">
+                    <li><a href="../HTML/Home_Login.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="../HTML/DanhMuc_Login-Dark.html">Products &nbsp;<i
+                                class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="../HTML/DanhMuc_Login-Dark.html" id="dropdown_items">Dark Chocolate</a>
+                            <a href="../HTML/DanhMuc_Login-white.html" id="dropdown_items">White Chocolate</a>
+                        </div>
+                    </li>
+                    <li><a href="../HTML/DanhMuc_Login-gift.html">Christmas Gifts</a></li>
+                </ul>
+            </nav>
+            <a href="../HTML/home.html"><img src="../IMG/logo.png" alt="logo" /></a>
+            <nav class="formpage__header--nav">
+                <ul class="nav__ul">
+                    <li><a href="../HTML/AboutUs_Login.html">About us</a></li>
+                    <li><a href="../HTML/Discount_Login.html">Discount</a></li>
+                    <li><a href="../HTML/GioHang.html" class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </a></li>
+                    <li class="dropdown">
+                        <a href=""><i class="fa-solid fa-skull" style="color: white;"></i></a>
+                        <div class="dropdown-content1">
+                            <a id="user--login" style="color: black;" href="#">User Name</a>
+                            <a id="logout-link" style="color: black;" href="#">Log out&nbsp;
+                                <i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="page-title">
+            <p style="padding: 20px; font-weight: 600; font-size: 18px;">Home > Information</p>
+            <div class="box-title">
+                <div class="box-title_css">
+
+                    <img class="user-avatar" src="../IMG/TheBoy.png" alt="">
+                    <div class="edit" style="padding-left: 20px;">
+                        <h1 class="page-title">User Name: </h1>
+                        <h2 class="name-title">Nguyen Tien Manh</h2>
+                        <a data-bs-toggle="modal" data-bs-target="#modalId"> <i class="fa-solid fa-pen-to-square"
+                                style="color: rgb(66, 64, 64);"></i>Edit Now</a>
+                    </div>
+                </div>
+                <div class="dash-line"></div>
+                <br>
+                <div class="box_content">
+                    <div class="table-responsive" style="width: 1000px; margin: 0 auto;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Information </th>
+                                    <th class="txt" scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="">
+                                    <td scope="row">Email:</td>
+                                    <td class="txt"></td>
+                                </tr>
+                                <tr class="">
+                                    <td scope="row">Password:</td>
+                                    <td class="txt"></td>
+                                </tr>
+                                <tr class="">
+                                    <td scope="row">Gender:</td>
+                                    <td class="txt">(*)</td>
+                                </tr>
+                                <tr class="">
+                                    <td scope="row">Address:</td>
+                                    <td class="txt">(*)</td>
+                                </tr>
+                                <tr class="">
+                                    <td scope="row">Phone number:</td>
+                                    <td class="txt">(*)</td>
+                                </tr>
+                                <tr class="">
+                                    <td scope="row">Birthday:</td>
+                                    <td class="txt">(*)</td>
+                                </tr>
+
+                                <tr class="">
+                                    <td scope="row">CMND Number:</td>
+                                    <td class="txt">(*)</td>
+                                </tr>
+                                <tr class="">
+                                    <td scope="row">Notes:</td>
+                                    <td class="txt">(*)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Modal trigger button -->
+
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-mg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr class="">
+                                        <td scope="row">User name</td>
+                                        <td><input type="text" id="user_name"></td>
+                                    </tr>
+                                    <tr class="">
+                                        <td scope="row">Email:</td>
+                                        <td><input type="email" id="email"></td>
+                                    </tr>
+                                    <tr class="">
+                                        <td scope="row">Gender:</td>
+                                        <td>
+                                            <input type="radio" id="nam" name="gender" value="Nam">
+                                            <label for="nam">Nam</label>
+                                            <input type="radio" name="gender" value="Nữ" id="nu">
+                                            <label for="nu">Nữ</label>
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td scope="row">Address:</td>
+                                        <td><input type="text" id="address"></td>
+                                    </tr>
+                                    <tr class="">
+                                        <td scope="row">Phone Number:</td>
+                                        <td><input type="tel" id="phone"></td>
+                                    </tr>
+                                    <tr class="">
+                                        <td scope="row">Birthday:</td>
+                                        <td><input type="date" name="" id="day"></td>
+                                    </tr>
+                                    <tr class="">
+                                        <td scope="row">CMND Number:</td>
+                                        <td><input type="text" id="cmnd"></td>
+                                    </tr>
+                                    <tr class="">
+                                        <td scope="row">Notes:</td>
+                                        <td><input type="text" id="note"></td>
+                                    </tr>
+                                    <tr class="">
+                                        <td scope="row">User Img:</td>
+                                        <td><input type="file" id="img"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center text-lg-start  text-dask"
+            style="border: 2px dashed black;margin-top: 20px; border-radius: 10px;">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4"
+                style="border-bottom: 2px dashed black;">
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Envato Chocolate
+                            </h6>
+                            <p>
+                                Welcome to Envato, where chocolate becomes an art form. Immerse yourself in a world of
+                                refined indulgence with our
+                                curated selection of premium chocolates. Elevate your moments with Enavo, where
+                                sophistication meets sweetness in every bite.
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Dark Chocolate</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">White Chocolate</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Christmas Gifts</a>
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Pricing</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> Industrial University of Ho Chi Minh City</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                nguyentienmanh@gmail.com
+                                <br>tranlephuongtran@gmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2023 Chocolate Luxury Shop:
+                <a class="text-reset fw-bold" href="Home.html">Envato Chocolate</a>
+            </div>
+        </footer>
+    </div>
+    <script src="../JS/About_Login.js"></script>
+    <script src="../"></script>
+</body>
+
+</html>
