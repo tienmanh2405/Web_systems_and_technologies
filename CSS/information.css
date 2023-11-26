@@ -33,11 +33,6 @@
     margin: 20px;
 }
 
-.fa-solid {
-    color: rgb(222, 237, 13);
-    color: linear-gradient(to bottom, rgb(222, 237, 13), rgb(53, 53, 51));
-}
-
 .box-title {
     width: 75vw;
     background-color: var(--backround-color);

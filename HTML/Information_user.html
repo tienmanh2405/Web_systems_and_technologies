@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../CSS/information.css">
     <script src="../bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+    <script src="../JS/jquery-3.7.1.min.js"></script>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap");
     </style>
@@ -18,6 +19,7 @@
 <body>
     <div class="formpage">
         <header class="formpage__header" id="backtotop">
+
             <nav class="formpage__header--nav">
                 <ul class="nav__ul">
                     <li><a href="../HTML/Home_Login.html">Home</a></li>
@@ -32,7 +34,7 @@
                     <li><a href="../HTML/DanhMuc_Login-gift.html">Christmas Gifts</a></li>
                 </ul>
             </nav>
-            <a href="../HTML/home.html"><img src="../IMG/logo.png" alt="logo" /></a>
+            <a href="../HTML/Home_Login.html"><img src="../IMG/logo.png" alt="logo" /></a>
             <nav class="formpage__header--nav">
                 <ul class="nav__ul">
                     <li><a href="../HTML/AboutUs_Login.html">About us</a></li>
@@ -41,9 +43,10 @@
                             <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
                         </a></li>
                     <li class="dropdown">
-                        <a href=""><i class="fa-solid fa-skull" style="color: white;"></i></a>
+                        <a href="../HTML/Information_user.html"><i class="fa-solid fa-skull"
+                                style="color: white;"></i></a>
                         <div class="dropdown-content1">
-                            <a id="user--login" style="color: black;" href="#">User Name</a>
+                            <a id="user--login" style="color: black;" href="../HTML/Information_user.html">User Name</a>
                             <a id="logout-link" style="color: black;" href="#">Log out&nbsp;
                                 <i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i></a>
                         </div>
@@ -56,10 +59,10 @@
             <div class="box-title">
                 <div class="box-title_css">
 
-                    <img class="user-avatar" src="../IMG/TheBoy.png" alt="">
+                    <img class="user-avatar" id="previewImage" src="../IMG/TheBoy.png" alt="">
                     <div class="edit" style="padding-left: 20px;">
                         <h1 class="page-title">User Name: </h1>
-                        <h2 class="name-title">Nguyen Tien Manh</h2>
+                        <h2 class="name-title"></h2>
                         <a data-bs-toggle="modal" data-bs-target="#modalId"> <i class="fa-solid fa-pen-to-square"
                                 style="color: rgb(66, 64, 64);"></i>Edit Now</a>
                     </div>
@@ -72,20 +75,21 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Information </th>
-                                    <th class="txt" scope="col"></th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="">
                                     <td scope="row">Email:</td>
-                                    <td class="txt"></td>
+                                    <td class="txt" id="user_email"></td>
                                 </tr>
                                 <tr class="">
                                     <td scope="row">Password:</td>
-                                    <td class="txt"></td>
+                                    <td class="txt"><input style="background-color: #f3f3f3; border: none;"
+                                            id="user_pass" type="password"></td>
                                 </tr>
                                 <tr class="">
-                                    <td scope="row">Gender:</td>
+                                    <td scope=" row">Gender:</td>
                                     <td class="txt">(*)</td>
                                 </tr>
                                 <tr class="">
@@ -130,57 +134,63 @@
                     </div>
                     <div class="modal-body">
                         <div class="table-responsive">
-                            <table class="table">
-                                <tbody>
-                                    <tr class="">
-                                        <td scope="row">User name</td>
-                                        <td><input type="text" id="user_name"></td>
-                                    </tr>
-                                    <tr class="">
-                                        <td scope="row">Email:</td>
-                                        <td><input type="email" id="email"></td>
-                                    </tr>
-                                    <tr class="">
-                                        <td scope="row">Gender:</td>
-                                        <td>
-                                            <input type="radio" id="nam" name="gender" value="Nam">
-                                            <label for="nam">Nam</label>
-                                            <input type="radio" name="gender" value="Nữ" id="nu">
-                                            <label for="nu">Nữ</label>
-                                        </td>
-                                    </tr>
-                                    <tr class="">
-                                        <td scope="row">Address:</td>
-                                        <td><input type="text" id="address"></td>
-                                    </tr>
-                                    <tr class="">
-                                        <td scope="row">Phone Number:</td>
-                                        <td><input type="tel" id="phone"></td>
-                                    </tr>
-                                    <tr class="">
-                                        <td scope="row">Birthday:</td>
-                                        <td><input type="date" name="" id="day"></td>
-                                    </tr>
-                                    <tr class="">
-                                        <td scope="row">CMND Number:</td>
-                                        <td><input type="text" id="cmnd"></td>
-                                    </tr>
-                                    <tr class="">
-                                        <td scope="row">Notes:</td>
-                                        <td><input type="text" id="note"></td>
-                                    </tr>
-                                    <tr class="">
-                                        <td scope="row">User Img:</td>
-                                        <td><input type="file" id="img"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <form id="reset_form">
+                                <table class="table">
+                                    <tbody>
+                                        <tr class="">
+                                            <td scope="row">User name</td>
+                                            <td><input type="text" id="name">
+                                                <div class="text-danger" id="errName"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">Email:</td>
+                                            <td><input type="email" id="email">
+                                                <div class="text-danger" id="errEmail"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">Gender:</td>
+                                            <td>
+                                                <input type="radio" id="nam" name="gender" value="Nam">
+                                                <label for="nam">Nam</label>
+                                                <input type="radio" name="gender" value="Nữ" id="nu">
+                                                <label for="nu">Nữ</label>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">Address:</td>
+                                            <td><input type="text" id="address"></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">Phone Number:</td>
+                                            <td><input type="tel" id="phone"></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">Birthday:</td>
+                                            <td><input type="date" name="" id="day"></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">CMND Number:</td>
+                                            <td><input type="text" id="cmnd"></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">Notes:</td>
+                                            <td><input type="text" id="note"></td>
+                                        </tr>
+                                        <tr class="">
+                                            <td scope="row">User Img:</td>
+                                            <td><input type="file" id="img"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
                         </div>
 
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save</button>
+                        <button type="button" id="btnclick" class="btn btn-primary">Save</button>
                     </div>
                 </div>
             </div>
@@ -280,7 +290,7 @@
         </footer>
     </div>
     <script src="../JS/About_Login.js"></script>
-    <script src="../"></script>
+    <script src="../JS/information.js"></script>
 </body>
 
 </html>
