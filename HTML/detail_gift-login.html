@@ -106,7 +106,7 @@
                                 max="10" min="1" name="" type="number" value="1">
                             <input class="plus is-form" type="button" value="+">
                         </div>
-                        <button class="add__card">Add to card</button>
+                        <button class="add__card" id="add__card">Add to card</button>
                     </div>
                 </div>
             </div>
@@ -207,6 +207,12 @@
     </div>
     <script src="../JS/detail_gift.js"></script>
     <script src="../JS/About_Login.js"></script>
+    <script>
+        $('#add__card').click(function () {
+            console.log('hello');
+            window.location.href = "../HTML/GioHang.html";
+        })
+    </script>
 </body>
 
 </html>

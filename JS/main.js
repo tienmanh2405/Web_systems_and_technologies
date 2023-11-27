@@ -18,15 +18,10 @@ $("#first-name").blur(function(e){
 })
 
 function checkEmail() {
-    let arrEmail = [];
     let email = $("#email").val();
     let check = /^[a-zA-Z0-9]+\@[a-zA-Z]{4,7}\.[a-zA-Z]{3}$/;
     if (email == '') {
         $("#errEmail").html("Required input");
-        return false;
-    }
-    else if (email === arrEmail) {
-        $("#errEmail").html("Email account already exists!");
         return false;
     }
     else if (!check.test(email)) {
@@ -34,7 +29,6 @@ function checkEmail() {
         return false;
     }
     else {
-        arrEmail.push(email);
         return true;
     }
 }

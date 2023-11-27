@@ -68,7 +68,9 @@ $(document).ready(function(){
         const note = $('#note').val();
         const img = $('#img').val();
         const txt = $('.txt');
+        const NameEdit = $('.name-title');
         if (checkUser() && checkEmail()) {
+            NameEdit.innerHTML = name;
             txt[0].innerHTML = email;
             txt[2].innerHTML = gender;  
             txt[3].innerHTML = address;
