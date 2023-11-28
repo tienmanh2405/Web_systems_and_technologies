@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="../bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/css/bootstrap.css" />
+    <script src="../bootstrap-5.0.2-dist (1)/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="../CSS/styles.css" />
     <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
     <link rel="stylesheet" href="../animate.css-main/animate.min.css">
@@ -260,10 +261,26 @@
             </div>
         </section>
 
-        <div class="backtotop">
+        <div class="backtotop ">
             <a href="#backtotop"><i class="fa-regular fa-hand-point-up" style="color: rgb(149, 147, 147);">TOP</i></a>
         </div>
 
+        <button type="button" class="btn animate__animated animate__headShake animate__infinite infinite"
+            id="liveToastBtn"><i id="mapfind" class="fa-solid fa-map" style="color: rgb(149, 147, 147);"></i></button>
+
+        <div class="toast-container text-bg-primary position-fixed bottom-0 end-0">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+                style="width: 600px;height: 600px;">
+                <div class="toast-header">
+                    <img style="width: 600px; height: 500px;" src="../IMG/sitemap.png" class="rounded me-2" alt="...">
+
+                </div>
+                <div class="toast-body">
+                    <h5 class="text-success-emphasis">Welcome to evato! Here is the sitemap of the website.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
         <footer class="text-center text-lg-start  text-dask"
             style="border: 2px dashed black;margin-top: 20px; border-radius: 10px;">
             <section class="d-flex justify-content-center justify-content-lg-between p-4"
@@ -360,7 +377,17 @@
     </div>
     <script src="../JS/About.js"></script>
     <script src="../JS/animation.js"></script>
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
 
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+    </script>
 
 
 </body>

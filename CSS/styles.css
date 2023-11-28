@@ -236,7 +236,7 @@
     right: 50px;
     bottom: 50px;
     border-radius: 50%;
-    background-image: url(../IMG/background-giay-cu-xam_090129420.jpg);
+    background-image: #f3f3f3;
     border: 2px dashed rgb(40, 39, 39);
 }
 .backtotop:hover i:hover{
@@ -406,4 +406,15 @@ a:hover {
 .card-body{
     margin-top: -23px;
 }
-
+#liveToastBtn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    border: 2px dashed rgb(40, 39, 39);
+    color: rgb(149, 147, 147);
+}
