@@ -46,7 +46,62 @@ $("#email").blur(function (e) {
     $("#errEmail").html("(*)");
     checkEmail();
 });
+const checkAge = () => {
+    const dob = $('#day').val();
+    // Nếu ngày sinh không hợp lệ, hiển thị thông báo lỗi
+    if (!isValidDate(dob)) {
+        $('#errday').html('Invalid date of birth');
+        return false;
+    }
+    const birthDate = new Date(dob);
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    // Kiểm tra nếu ngày sinh chưa tới trong năm nay, giảm đi 1 năm
+    if (
+        today.getMonth() < birthDate.getMonth() ||
+        (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate())
+    ) {
+        age--;
+    }
+    // Kiểm tra nếu tuổi nhỏ hơn hoặc bằng 15, hiển thị thông báo lỗi
+    if (age <= 15) {
+        $('#errday').html('Not old enough');
+        return false;
+    }
 
+    // Nếu không có lỗi, xóa thông báo lỗi
+    $('#errday').html('');
+    return true;
+};
+
+// Hàm kiểm tra xem một chuỗi có đúng định dạng ngày tháng không
+const isValidDate = (dateString) => {
+    const regex = /^\d{4}-\d{2}-\d{2}$/;
+    return regex.test(dateString);
+};
+
+$("#day").blur(function (e) {
+    $("#errday").html("(*)");
+    checkAge();
+});
+function checkCmnd() {
+    let cmnd = $("#cmnd").val();
+    let check = /^[0-9]{10}$/;
+    if (cmnd == '') {
+        return true;
+    }
+    else if (!check.test(cmnd)) {
+        $("#errcmnd").html("Please re-enter the correct CMND!");
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+$("#cmnd").blur(function (e) {
+    $("#errcmnd").html("");
+    checkCmnd();
+});
 $(document).ready(function(){
     $('#modalId').on('show.bs.modal', function (event) {
     var modal = $(this);
@@ -69,7 +124,7 @@ $(document).ready(function(){
         const img = $('#img').val();
         const txt = $('.txt');
         const NameEdit = $('.name-title');
-        if (checkUser() && checkEmail()) {
+        if (checkUser() && checkEmail() && checkAge() && checkCmnd()) {
             NameEdit.innerHTML = name;
             txt[0].innerHTML = email;
             txt[2].innerHTML = gender;  

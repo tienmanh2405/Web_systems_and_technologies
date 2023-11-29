@@ -1,6 +1,6 @@
 function checkFirstName(){
     let name = $("#first_name").val();
-    let check =  /^([A-ZÀ-Ỹ][a-zà-ỹ]*\s?)+$/;
+    let check =  /^[A-Z][a-zA-z]*(\s[A-Z][a-zA-Z]*)*$/;
     if(name == ''){
         $("#errName").html("Required input");
         return false;
@@ -71,13 +71,13 @@ $("#email").blur(function (e) {
 })
 function checkPhone() {
     let phone = $("#phone").val();
-    const pattern = /^\d{3}-\d{3}-\d{4}$/;
+    const pattern = /^(03|07|09|08)\d{8}$/;
     if (phone == '') {
         $("#errEmail").html("Required input");
         return false;
     }
     else if (!pattern.test(phone)) {
-        $("#errEmail").html(" Phone: Please re-enter the correct email address!");
+        $("#errEmail").html(" Phone: Please re-enter the correct phone number!");
         return false;
     }
     else {
